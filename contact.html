@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <title>EDUFORD</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="#"><img class="logo" alt="EDUFORD" src="img/logo.png" /></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="cours.html">COURS</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <h1>contact us</h1>
+    </section>
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4676.392078820498!2d-6.765131359805349!3d34.02569134800752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76bac07bf1a81%3A0x617a18b783071b2c!2sPharmacie%20saha!5e0!3m2!1sfr!2sma!4v1633364169776!5m2!1sfr!2sma"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>XYZ Road,ABC Building</h5>
+              <p>Bangalor,Karnataka sqda</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>XYZ Road,ABC Building</h5>
+              <p>Bangalor,Karnataka sqda</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>XYZ Road,ABC Building</h5>
+              <p>Bangalor,Karnataka sqda</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="">
+            <input type="text" placeholder="Enter your name" required />
+            <input type="email" placeholder="Enter your email" required />
+            <input type="text" placeholder="Enter your subject " required />
+            <textarea placeholder="Message" rows="8" required></textarea>
+            <button type="submit" class="btn red-btn">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <h4>about us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, vitae
+        laboriosam? Minus, adipisci dolorem magni magnam saepe modi
+        <br />similique, ea minima perspiciatis. Dolores, soluta ullam.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>made with <i class="fa fa-heart-o"></i> by easy tutorials</p>
+    </section>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
